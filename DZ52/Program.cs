@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DZ52
 {
@@ -14,7 +10,7 @@ namespace DZ52
             string[] masWord = phrase.Split(' ');
             return masWord;
         }
-        static string  ReversWords(string inputPhrase)
+        static string ReversWords(string inputPhrase)
         {
             string[] printWord = SeparatWords(inputPhrase);
             Console.WriteLine("Вуаля магия : ");
