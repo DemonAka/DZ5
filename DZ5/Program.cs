@@ -9,22 +9,22 @@ namespace DZ5
         static string[] SeparatWords(string phrase)
         {
             string[] masWord = phrase.Split(' ');
-            Print(masWord);
             return masWord;
         }
-
-        static string[] Print(string[] masWord)
+        static string[] Print()
         {
-            foreach (var word in masWord)
+            string[] printWord = SeparatWords(Console.ReadLine());
+            Console.WriteLine("Вот список слов из предложения : ");
+            foreach (string word in printWord)
             {
                 Console.WriteLine($"{word}");
             }
-            return masWord;
+            return printWord;
         }
         static void Main(string[] args)
         {
             Console.WriteLine("Введите предложение или бессвязный набор букв, а я разделю их на слова");
-            SeparatWords(Console.ReadLine());
+            Print();
             Console.ReadKey();
         }
 
